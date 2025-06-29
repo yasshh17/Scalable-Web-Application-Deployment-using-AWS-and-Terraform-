@@ -1,4 +1,4 @@
-# 🏗️ Scalable Web Application Infrastructure on AWS (Terraform)
+# Scalable Web Application Infrastructure on AWS (Terraform)
 
 This project demonstrates how to deploy a secure, highly available, and auto-scalable web application infrastructure on **AWS** using **Terraform**. It includes a custom VPC, EC2 instances, an Application Load Balancer, Auto Scaling, Amazon RDS, and CloudWatch monitoring — all managed through Infrastructure as Code.
 
