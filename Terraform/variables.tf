@@ -127,7 +127,7 @@ variable "db_username" {
 variable "db_password" {
   description = "RDS database password"
   type        = string
-  default     = "123Yash987"
   sensitive   = true
+}
 }
 
