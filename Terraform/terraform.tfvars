@@ -1,6 +1,6 @@
 region      = "us-east-1"
 db_username = "webapp_user"
-db_password = "123Yash987"
+db_password = "xxxxxxxxx"
 
 public_subnets = [
   "10.0.1.0/24",
