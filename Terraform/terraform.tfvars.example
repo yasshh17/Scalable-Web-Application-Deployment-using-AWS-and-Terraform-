@@ -1,20 +1,25 @@
-# Terraform local working directory
-**/.terraform/*
+region      = "us-east-1"
+db_username = "replace_with_database_username"
+db_password = "replace_with_database_password"
 
-# Terraform state
-*.tfstate
-*.tfstate.*
+public_subnets = [
+  "10.0.1.0/24",
+  "10.0.2.0/24",
+  "10.0.3.0/24"
+]
 
-# Local variable values
-*.tfvars
-!*.tfvars.example
+private_subnets = [
+  "10.0.4.0/24",
+  "10.0.5.0/24"
+]
 
-# Terraform plans and logs
-*.tfplan
-crash.log
+ami_id               = "replace_with_region_appropriate_ami_id"
+instance_type        = "t3.micro"
+max_asg_size         = 3
+min_asg_size         = 1
+desired_asg_capacity = 1
 
-# Local override files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+db_name           = "webapp_db"
+db_engine         = "mysql"
+db_engine_version = "8.0.34"
+allocated_storage = 20
