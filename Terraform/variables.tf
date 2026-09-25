@@ -1,19 +1,6 @@
 # variables.tf
 
 # Database Engine
-variable "db_engine" {
-  description = "The database engine (e.g., MySQL, PostgreSQL, etc.)"
-  type        = string
-  default     = "mysql"
-}
-
-# Database Engine Version
-variable "db_engine_version" {
-  description = "Version of the database engine"
-  type        = string
-  default     = "8.0.34"
-}
-
 # Allocated Storage
 variable "allocated_storage" {
   description = "The allocated storage for the database (in GB)"
@@ -128,6 +115,5 @@ variable "db_password" {
   description = "RDS database password"
   type        = string
   sensitive   = true
-}
 }
 

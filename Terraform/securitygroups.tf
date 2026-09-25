@@ -51,7 +51,7 @@ resource "aws_security_group" "ec2_sg" {
 # Security Group for RDS Instance
 resource "aws_security_group" "rds_sg" {
   name        = "webapp-rds-sg"
-  description = "Allow MySQL traffic from EC2 instances"
+  description = "Allow PostgreSQL traffic from EC2 instances"
   vpc_id      = aws_vpc.webapp_vpc.id
 
   ingress {

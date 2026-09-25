@@ -20,6 +20,4 @@ min_asg_size         = 1
 desired_asg_capacity = 1
 
 db_name           = "webapp_db"
-db_engine         = "mysql"
-db_engine_version = "8.0.34"
 allocated_storage = 20

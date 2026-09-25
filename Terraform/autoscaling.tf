@@ -1,4 +1,4 @@
- autoscaling.tf
+# autoscaling.tf
 
 resource "aws_autoscaling_group" "webapp_asg" {
   name                = "webapp-asg"
